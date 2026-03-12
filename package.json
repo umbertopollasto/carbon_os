@@ -89,7 +89,8 @@
     "fast-uri": "^3.1.0",
     "fdir": "^6.5.0",
     "remix-flat-routes": "^0.8.5",
-    "sst": "3.17.14"
+    "sst": "3.17.14",
+    "@remix-run/dev": "^2.x.x"
   },
   "optionalDependencies": {
     "@rollup/rollup-linux-x64-gnu": "^4.0.0"
