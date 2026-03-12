@@ -10,7 +10,6 @@
     "patch-package": "^8.0.1",
     "postcss-nesting": "12.1.5",
     "prettier": "^2.8.0",
-
     "rimraf": "^5.0.5",
     "supabase": "2.54.11",
     "ts-morph": "^22.0.0",
@@ -41,6 +40,7 @@
     "db:migrate": "npm run db:migrate -w @carbon/database",
     "db:migrate:force": "turbo run db:migrate:force --no-cache",
     "db:migrate:new": "npm run db:migrate:new -w @carbon/database",
+    "db:build:vercel": "npx supabase db push --project-ref njccjitplqrkjdwuwzrd",
     "db:pull": "turbo run db:pull",
     "db:push": "turbo run db:push",
     "db:restart": "run-s db:stop db:start",
@@ -90,7 +90,8 @@
     "fdir": "^6.5.0",
     "remix-flat-routes": "^0.8.5",
     "sst": "3.17.14",
-    "@remix-run/dev": "^2.x.x"
+    "@remix-run/dev": "^2.x.x",
+    "@remix-run/node": "^2.15.0"
   },
   "optionalDependencies": {
     "@rollup/rollup-linux-x64-gnu": "^4.0.0"
