@@ -6,7 +6,9 @@ const sessionStorage = createCookieSessionStorage({
   cookie: {
     name: MES_FILTERS_KEY,
     path: "/",
-    secure: false
+    secure: false,
+    secrets: [process.env.SESSION_SECRET!],
+    httpOnly: true
   }
 });
 
