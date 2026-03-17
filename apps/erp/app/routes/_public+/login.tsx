@@ -66,7 +66,7 @@ export async function loader({ request }: LoaderFunctionArgs) {
 
 const ratelimit = new Ratelimit({
   redis,
-  limiter: Ratelimit.slidingWindow(RATE_LIMIT, "1 h"),
+  limiter: Ratelimit.slidingWindow(RATE_LIMIT, "1 s"),
   analytics: true
 });
 

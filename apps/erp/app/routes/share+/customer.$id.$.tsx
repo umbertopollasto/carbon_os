@@ -38,7 +38,7 @@ const supportedFileTypes: Record<string, string> = {
 
 const ratelimit = new Ratelimit({
   redis,
-  limiter: Ratelimit.slidingWindow(10, "1 m"), // 10 downloads per minute
+  limiter: Ratelimit.slidingWindow(10, "1 s"), // 10 downloads per minute
   analytics: true
 });
 

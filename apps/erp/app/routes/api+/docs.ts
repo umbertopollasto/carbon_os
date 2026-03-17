@@ -10,7 +10,7 @@ import { docsQuery } from "~/utils/react-query";
 
 const ratelimit = new Ratelimit({
   redis,
-  limiter: Ratelimit.slidingWindow(20, "1 h"),
+  limiter: Ratelimit.slidingWindow(20, "1 s"),
   analytics: true
 });
 
